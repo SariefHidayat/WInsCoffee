@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+
+    <!-- sweetalert2 css -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.2/sweetalert2.min.css"
+    />
+
+    <!-- my css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <title>WinsCoffee</title>
+  </head>
+  <body>
+    <!-- navbar start -->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo">Wins <span>Coffee</span></a>
+      <div class="navbar-list-group">
+        <a href="#home" class="navbar-list">Home</a>
+        <a href="#about" class="navbar-list">About Us</a>
+        <a href="#product" class="navbar-list">Product</a>
+        <a href="#contact" class="navbar-list">Contact</a>
+      </div>
+      <div class="navbar-icon">
+        <i
+          data-feather="search"
+          class="icon btn-modal"
+          id="search"
+          data-modal="searchModal"
+        ></i>
+        <i
+          data-feather="shopping-cart"
+          class="icon btn-modal"
+          id="shopping-cart"
+          data-modal="tableModal"
+        ></i>
+        <i data-feather="menu" class="icon" id="hamburger"></i>
+      </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- section hero start -->
+    <section class="hero" id="home">
+      <div class="content">
+        <h1>Let's Enjoy a Cup <span>Coffee</span></h1>
+        <p>Make your day enjoyable with us.</p>
+        <a href="#product" class="button">Buy Now</a>
+      </div>
+    </section>
+    <!-- section hero end -->
+
+    <!-- section about start -->
+    <section class="about" id="about">
+      <h2>About <span>Us</span></h2>
+      <div class="row">
+        <div class="image-wrapper">
+          <img
+            src="images/about.jpg"
+            width="100"
+            alt="tentang kami"
+            class="image"
+          />
+        </div>
+        <div class="content">
+          <h3>Why choose our coffee?</h3>
+          <p>
+            Founded in 2023. Wins Coffee is a coffee startup retail who want to
+            serve high quality coffee to customers his customers. The name Wins
+            is taken from the name of one of the owners, at the same time it has
+            the meaning of winning (victory). We want existence we will create a
+            new standard of quality coffee for consumers!
+          </p>
+          <p>
+            Leveraging our network and experience, we use cutting-edge
+            technology and the best coffee blends. Coffee from farmers Selected,
+            high quality coffee beans are processed and roasted perfectly and
+            carried out by skilled baristas. Which always passionate about
+            preparing a special glass of happiness for you..
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- section about end -->
+
+    <!-- section menu start -->
+    <section class="product" id="product">
+      <div class="header">
+        <h2>Our <span>Menu</span></h2>
+        <p>We provide several of our mainstay menus.</p>
+      </div>
+      <div class="card-container"></div>
+    </section>
+    <!-- section menu end -->
+
+    <!-- section contact start -->
+    <section class="contact" id="contact">
+      <div class="header">
+        <h2>Contact <span>Us</span></h2>
+        <p>Please contact us below.</p>
+      </div>
+      <div class="row">
+        <div class="image-wrapper">
+          <img src="images/contact.jpg" alt="kontak kami" class="image" />
+        </div>
+        <div class="form-wrapper">
+          <form action="" class="form">
+            <div class="form-group">
+              <label for="nama" class="label">Full Name</label>
+              <input
+                type="text"
+                id="nama"
+                class="input input-name"
+                placeholder="Nama lengkap"
+              />
+            </div>
+            <div class="form-group">
+              <label for="email" class="label">Email</label>
+              <input
+                type="text"
+                id="email"
+                class="input input-email"
+                placeholder="Alamat email"
+              />
+            </div>
+            <div class="form-group">
+              <label for="nomor" class="label">Phone Number</label>
+              <input
+                type="number"
+                id="nomor"
+                class="input input-nomor"
+                placeholder="No.telepon"
+              />
+            </div>
+            <button type="submit" class="button btn-submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- section contact end -->
+
+    <!-- footer start -->
+    <footer class="footer">
+      <div class="wrapper">
+        <a href="#" target="_blank"
+          ><i data-feather="instagram"></i
+        ></a>
+        <a href=#" target="_blank"
+          ><i data-feather="facebook"></i
+        ></a>
+        <a href="#" target="_blank"
+          ><i data-feather="twitter"></i
+        ></a>
+      </div>
+      <div class="wrapper">
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#product">Our Product</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <span>created by WinsCoffee | © 2023</span>
+    </footer>
+    <!-- footer end -->
+
+    <!-- search input modal start -->
+    <div class="modal" data-id="searchModal">
+      <div class="modal-header">
+        <h3>Search Modal</h3>
+        <i data-feather="x-circle" class="btn-modal-close"></i>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+          <input
+            type="text"
+            class="input search-input"
+            placeholder="ketikkan nama produk ..."
+          />
+        </div>
+        <!-- product container start -->
+        <div class="product-container"></div>
+        <!-- product container end -->
+      </div>
+    </div>
+    <!-- search input modal end -->
+
+    <!-- shopping cart modal start -->
+    <div class="modal" data-id="tableModal">
+      <div class="modal-header">
+        <h3>Shopping Cart Modal</h3>
+        <i data-feather="x-circle" class="btn-modal-close"></i>
+      </div>
+      <div class="modal-body">
+        <!-- list start -->
+        <div class="box-container"></div>
+        <!-- list end -->
+        <div class="wrapper">
+          <h4>Cost :</h4>
+          <span class="price">0</span>
+        </div>
+        <button class="button button-checkout">Checkout</button>
+      </div>
+    </div>
+    <!-- shopping cart modal end -->
+
+    <!-- feather icon -->
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="js/icon.js"></script>
+
+    <!-- sweetalert2 js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/11.7.2/sweetalert2.min.js"></script>
+
+    <!-- my javascript -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
