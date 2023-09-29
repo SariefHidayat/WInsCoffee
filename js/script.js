@@ -60,19 +60,19 @@ window.addEventListener("DOMContentLoaded", () => {
     {
       image: "1.jpg",
       name: "Arabika Gayo",
-      price: `Rp69.900`,
+      price: 69.921,
       description: `- Jenis : Arabika
-       - Origin : Gayo, Aceh, Sumatra
-       - Proses : Semi Wash
-       - Profil Roasting : Medium / Omni Roast
-       - Flavor Notes : Brown Sugar, Dark Chocolate, Sweet, Orange Zest / Citrus
-       - Netto : 200 Gram
-       - Packaging : One way Valve, Alumunium Foil`,
+      - Origin : Gayo, Aceh, Sumatra
+      - Proses : Semi Wash
+      - Profil Roasting : Medium / Omni Roast
+      - Flavor Notes : Brown Sugar, Dark Chocolate, Sweet, Orange Zest / Citrus
+      - Netto : 200 Gram
+      - Packaging : One way Valve, Alumunium Foil`,
     },
     {
       image: "2.jpg",
       name: "Arabika Malabar",
-      price: `Rp69.900`,
+      price: 69.932,
       description: `- Jenis : Arabika
         - Origin : Gunung Malabar, Bandung, Jawa Barat
         - Proces : Fullwash
@@ -85,7 +85,7 @@ window.addEventListener("DOMContentLoaded", () => {
     {
       image: "3.jpg",
       name: "Arabika Bali Kintamani",
-      price: `Rp69.900`,
+      price: 69.952,
       description: `- Jenis : Arabika
       - Origin : Kintamani, Pulau Dewata Bali
       - Proses : Full Wash
@@ -97,7 +97,7 @@ window.addEventListener("DOMContentLoaded", () => {
     {
       image: "4.jpeg",
       name: "Arabika Semendo",
-      price: `Rp69.900`,
+      price: 69.925,
       description: `Jenis : Arabika - Origin : Semendo, Sumatra - Proces : Semi Wash
         - Profil Roasting : Medium / Omni Roast
         - Flavor Notes (Bias) : Tropical Fruit, Brown Sugar, Sweetness Long
@@ -107,7 +107,7 @@ window.addEventListener("DOMContentLoaded", () => {
     {
       image: "5.jpeg",
       name: "Arabika Papua Wamena",
-      price: `Rp69.900`,
+      price: 69.971,
       description: `- Jenis : Arabika
         - Origin : Wamena, Papua
         - Proses : Semi Wash
@@ -119,7 +119,7 @@ window.addEventListener("DOMContentLoaded", () => {
     {
       image: "6.jpeg",
       name: "Arabika Kerinci",
-      price: `Rp69.900`,
+      price: 69.951,
       description: `- Jenis : Arabika
         - Origin : Kerinci, Jambi, Sumatra
         - Proses : Full Wash
