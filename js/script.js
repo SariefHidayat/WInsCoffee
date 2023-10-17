@@ -62,11 +62,17 @@ window.addEventListener("DOMContentLoaded", () => {
       name: "Arabika Gayo",
       price: 69.921,
       description: `- Jenis : Arabika
+      <br/>
       - Origin : Gayo, Aceh, Sumatra
+      <br/>
       - Proses : Semi Wash
+      <br/>
       - Profil Roasting : Medium / Omni Roast
+      <br/>
       - Flavor Notes : Brown Sugar, Dark Chocolate, Sweet, Orange Zest / Citrus
+      <br/>
       - Netto : 200 Gram
+      <br/>
       - Packaging : One way Valve, Alumunium Foil`,
     },
     {
@@ -74,12 +80,19 @@ window.addEventListener("DOMContentLoaded", () => {
       name: "Arabika Malabar",
       price: 69.932,
       description: `- Jenis : Arabika
+      <br/>
         - Origin : Gunung Malabar, Bandung, Jawa Barat
+        <br/>
         - Proces : Fullwash
+        <br/>
         - Profil Roasting : Medium / Omni Roast
+        <br/>
         - Flavor Notes (Bias) : Fruity, Hints of Floral, Chocolate
+        <br/>
         - Acidity : Medium
+        <br/>
         - Netto : 200gr
+        <br/>
         - Packaging : One way Valve, Alumunium Foill`,
     },
     {
@@ -87,46 +100,72 @@ window.addEventListener("DOMContentLoaded", () => {
       name: "Arabika Bali Kintamani",
       price: 69.952,
       description: `- Jenis : Arabika
+      <br/>
       - Origin : Kintamani, Pulau Dewata Bali
+      <br/>
       - Proses : Full Wash
+      <br/>
       - Profil Roasting : Medium / Omni Roast
+      <br/>
       - Flavor Notes : Chocolate, Nutty, Fruity, Lemon Hint
+      <br/>
       - Netto : 200gr
+      <br/>
       - Packaging : One way Valve, Alumunium Foil`,
     },
     {
       image: "4.jpeg",
       name: "Arabika Semendo",
       price: 69.925,
-      description: `Jenis : Arabika - Origin : Semendo, Sumatra - Proces : Semi Wash
-        - Profil Roasting : Medium / Omni Roast
-        - Flavor Notes (Bias) : Tropical Fruit, Brown Sugar, Sweetness Long
-        - Netto : 200 Gram
-        - Packaging : One way Valve, Alumunium Foill`,
+      description: `Jenis : Arabika
+      <br/>
+      - Origin : Semendo, Sumatra
+      <br/> 
+      - Proces : Semi Wash
+      <br/>
+      - Profil Roasting : Medium / Omni Roast
+      <br/>
+      - Flavor Notes (Bias) : Tropical Fruit, Brown Sugar, Sweetness Long
+      <br/>
+      - Netto : 200 Gram
+      <br/>
+      - Packaging : One way Valve, Alumunium Foill`,
     },
     {
       image: "5.jpeg",
       name: "Arabika Papua Wamena",
       price: 69.971,
       description: `- Jenis : Arabika
-        - Origin : Wamena, Papua
-        - Proses : Semi Wash
+      <br/>
+      - Origin : Wamena, Papua
+      <br/>
+      - Proses : Semi Wash
+      <br/>
         - Profil Roasting : Medium / Omni Roast
-        - Flavor Notes : Caramel, Chocolatey, Brown Sugar, Floral, Bright and Clean Delicate Sweetness
-        - Netto : 200gr
-        - Packaging : One way Valve, Alumunium Foil`,
+      <br/>
+      - Flavor Notes : Caramel, Chocolatey, Brown Sugar, Floral, Bright and Clean Delicate Sweetness
+      <br/>
+      - Netto : 200gr
+      <br/>
+      - Packaging : One way Valve, Alumunium Foil`,
     },
     {
       image: "6.jpeg",
       name: "Arabika Kerinci",
       price: 69.951,
       description: `- Jenis : Arabika
-        - Origin : Kerinci, Jambi, Sumatra
-        - Proses : Full Wash
-        - Profil Roasting : Medium / Omni Roast
-        - Flavor Notes : Floral, Malty Sweetnees, Grape Acidity
-        - Netto : 200gr
-        - Packaging : One way Valve, Alumunium Foil`,
+      <br/>
+      - Origin : Kerinci, Jambi, Sumatra
+      <br/>
+      - Proses : Full Wash
+      <br/>
+      - Profil Roasting : Medium / Omni Roast
+      <br/>
+      - Flavor Notes : Floral, Malty Sweetnees, Grape Acidity
+      <br/>
+      - Netto : 200gr
+      <br/>
+      - Packaging : One way Valve, Alumunium Foil`,
     },
   ];
   /* ========== DATA PRODUCT END ========== */
@@ -289,8 +328,8 @@ window.addEventListener("DOMContentLoaded", () => {
     swal
       .fire({
         icon: "info",
-        title: "anda yakin?",
-        text: "anda yakin ingin menghapus list data ini?",
+        title: "You are sure?",
+        text: "Are you sure you want to delete this data list?",
         showCancelButton: true,
       })
       .then((response) => {
@@ -301,7 +340,7 @@ window.addEventListener("DOMContentLoaded", () => {
           // simpan perubahan tersebut kedalam localstorage
           saveToLocalstorage();
           // beri pesan bahwa "data berhasil dihapus"
-          alerts("success", "data berhasil dihapus!");
+          alerts("success", "data deleted successfully!");
           // update total biaya yang harus dibayarkan
           updateTotalCost();
           // load atau muat data yang ada didalam localstorage
@@ -403,7 +442,7 @@ window.addEventListener("DOMContentLoaded", () => {
     // jika jumlah barang lebih besar dari angka 0
     if (product > 0) {
       // plugin atau library dari "sweetalert2"
-      const message = `jumlah barang yang anda beli adalah sebanyak ${product} barang. dan total biaya yang harus anda keluarkan adalah ${price.textContent}`;
+      const message = `the number of items you buy is as much as ${product} items. and the amount of fees you have to pay is ${price.textContent}`;
       alerts("success", message);
       // hapus semua isi variabel "tasks"
       tasks = [];
